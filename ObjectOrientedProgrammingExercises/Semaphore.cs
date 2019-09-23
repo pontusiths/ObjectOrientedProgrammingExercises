@@ -9,7 +9,7 @@ namespace ObjectOrientedProgrammingExercises
     {
         private static Semaphore[] instances;
 
-        private static int incrementedIndex;
+        private static int incrementedIndex = -1;
         private int index;
         private Semaphore()
         {
