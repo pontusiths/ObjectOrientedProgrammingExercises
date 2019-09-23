@@ -20,7 +20,7 @@ namespace ObjectOrientedProgrammingExercises
         {
             if (instances == null)
             {
-                instances = Enumerable.Repeat(new Semaphore(), 5).Cast<Semaphore>().ToArray();
+                instances = Enumerable.Range(1, 5).Select(i => new Semaphore()).ToArray();
             }
             return RequestEnumerable().ToList().FirstOrDefault();
         }
